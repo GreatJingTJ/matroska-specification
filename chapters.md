@@ -68,6 +68,28 @@ These other `Elements` belong to the Matroska DVD menu system and are only used 
 
 See [the section on the Linked Segments](#linked-segments)) for more information about `Hard Linking`, `Soft Linking` and `Medium Linking`.
 
+### ChapterSegmentUID
+
+
+The `ChapterSegmentUID` is a binary value with a size of 128 bits and the base element to set up a `Linked Chapter` in 2 variations. For both variations the following 3 conditions MUST be met.
+
+ 1. The `EditionFlagOrdered Flag` is set to true
+ 2. The `ChapterSegmentUID` is not the own `SegmentUID`
+ 3. The linked Matroska file/Segment is in the same folder
+  
+#### Variation 1: Linked-Duration
+
+Two more conditions MUST be met.
+
+ 1. `ChapterTimeStart` and `ChapterTimeEnd` timestamps MUST be in the range of the linked Matroska file/Segment duration
+ 2. `ChapterSegmentEditionUID` MUST be not set
+
+A `Matroska Player` MUST play the content of the linked Matroska file/Segment from the `ChapterTimeStart` until `ChapterTimeEnd` timestamp.
+
+#### Variation 2: Linked-Edition
+
+Only one more condition MUST be met when the `ChapterSegmentEditionUID` is set with a valid `EditionUID` from the linked Matroska file/Segment. A `Matroska Player` MUST play these linked `Edition`.
+
 ## Menu features
 
 The menu features are handled like a _chapter codec_. That means each codec has a type, some private data and some data in the chapters.
