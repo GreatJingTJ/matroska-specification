@@ -78,10 +78,10 @@ The `ChapterSegmentUID` is a binary value and the base element to set up a `Link
   
 #### Variation 1: Linked-Duration
 
-Two more conditions MUST be met.
+Two more conditions MUST be met:
 
- 1. `ChapterTimeStart` and `ChapterTimeEnd` timestamps MUST be in the range of the linked Matroska file/Segment duration
- 2. `ChapterSegmentEditionUID` MUST be not set
+ 1. `ChapterTimeStart` and `ChapterTimeEnd` timestamps MUST be in the range of the linked Matroska file/Segment duration.
+ 2. `ChapterSegmentEditionUID` MUST be not set.
 
 A `Matroska Player` MUST play the content of the linked Matroska file/Segment from the `ChapterTimeStart` until `ChapterTimeEnd` timestamp.
 
