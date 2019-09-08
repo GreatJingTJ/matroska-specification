@@ -87,7 +87,7 @@ A `Matroska Player` MUST play the content of the linked Segment from the `Chapte
 
 #### Variation 2: Linked-Edition
 
-Only one more condition MUST be met when the `ChapterSegmentEditionUID` is set with a valid `EditionUID` from the linked Segment. A `Matroska Player` MUST play these linked `Edition`.
+When the `ChapterSegmentEditionUID` is set to a valid `EditionUID` from the linked Segment. A `Matroska Player` MUST play these linked `Edition`.
 
 ## Menu features
 
