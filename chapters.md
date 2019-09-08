@@ -72,9 +72,9 @@ See [the section on the Linked Segments](#linked-segments)) for more information
 
 The `ChapterSegmentUID` is a binary value and the base element to set up a `Linked Chapter` in 2 variations: the Linked-Duration linking and the Linked-Edition linking. For both variations the following 3 conditions MUST be met:
 
- 1. The `EditionFlagOrdered Flag` is set to true
- 2. The `ChapterSegmentUID` is not the own `SegmentUID`
- 3. The linked Matroska file/Segment is in the same folder
+ 1. The `EditionFlagOrdered Flag` MUST be true.
+ 2. The `ChapterSegmentUID` MUST NOT be the `SegmentUID` of its own `Segment`.
+ 3. The linked Matroska file/Segments MUST BE in the same folder.
   
 #### Variation 1: Linked-Duration
 
