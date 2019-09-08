@@ -70,7 +70,7 @@ See [the section on the Linked Segments](#linked-segments)) for more information
 
 ### ChapterSegmentUID
 
-The `ChapterSegmentUID` is a binary value with a size of 128 bits and the base element to set up a `Linked Chapter` in 2 variations. For both variations the following 3 conditions MUST be met:
+The `ChapterSegmentUID` is a binary value and the base element to set up a `Linked Chapter` in 2 variations. For both variations the following 3 conditions MUST be met:
 
  1. The `EditionFlagOrdered Flag` is set to true
  2. The `ChapterSegmentUID` is not the own `SegmentUID`
