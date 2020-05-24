@@ -123,7 +123,7 @@ A `Chapter` element can be used recursively. Such a child `Chapter` is called `N
 
 ### ChapterTimeStart
 A not scaled timestamp of the start of `Chapter` with nanosecond accuracy.
-For `Simple Chapters` are the start time stamps equal to the chapter markers in the timeline.
+For `Simple Chapters` this is the position of the chapter markers in the timeline.
 
 ### ChapterTimeEnd
 A timestamp of the end of `Chapter` with nanosecond accuracy.  The timestamp is excluded and also not scaled.
