@@ -142,8 +142,7 @@ Chapter 4 | 9000000000      | 8000000000    | -1000000000 (illegal)
 
 ### ChapterFlagHidden
 
-The `ChapterFlagHidden` flag works a bit different as the `EditionFlagHidden` flag. Each `Chapters ChapterFlagHidden` flag works independent.
-A `Nested Chapter` with `ChapterFlagHidden` flag set to false remains visible even if the `Parent Chapter ChapterFlagHidden` flag is set to true.
+A `Nested Chapter` with `ChapterFlagHidden` flag set to false remains hidden if the parent `Chapter ChapterFlagHidden` flag is set to true.
 
 Chapter + Nested Chapter | ChapterFlagHidden | visible
 -------------------------|-------------------|--------
@@ -151,7 +150,7 @@ Chapter 1                | false             | yes
 +Nested Chapter 1.1      | false             | yes
 +Nested Chapter 1.2      | true              | no
 Chapter 2                | true              | no
-+Nested Chapter 2.1      | false             | yes
++Nested Chapter 2.1      | false             | no
 +Nested Chapter 2.2      | true              | no
 
 ### ChapterFlagEnabled
